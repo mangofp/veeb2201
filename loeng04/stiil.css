@@ -1,0 +1,78 @@
+
+header img {
+    width: 150px;
+}
+
+header {
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+
+nav {
+    display: flex;
+    background-color: black;
+    height: 50px;
+    justify-content: center;
+}
+
+nav > ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 70px;
+}
+
+nav > ul > li > a {
+    color: blanchedalmond;
+    padding-right: 10px;
+}
+
+main {
+    display: flex;
+    height: max-content;
+    background-color: blanchedalmond;
+}
+
+main section {
+    background-color: blanchedalmond;
+    height: 300px;
+    width: 80%;
+    height: max-content;
+}
+
+main aside {
+    background-color: blanchedalmond;
+    height: 300px;
+    width: 20%;
+    min-width: 220px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+main aside a {
+    width: 80%;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.pildiga-blokk {
+    display: flex;
+}
+
+.pildiga-blokk img {
+    width: 40%;
+    min-width: 200px;
+    margin-right: 10px;
+}
+
+.pildiga-blokk p {
+    text-align: justify;
+}
+
+.reklaam {
+    width: 100%;
+}
