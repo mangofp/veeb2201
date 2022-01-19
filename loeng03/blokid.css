@@ -1,17 +1,18 @@
 body {
     display: flex;
-    align-content: center;
-    width: 100%;
+    align-items: center;
+    height: 100vh;
 }
+
 .konteiner {
     background-color: lightsteelblue;
-    width: 80%;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    height: fit-content;
 }
 
 .blokk {
