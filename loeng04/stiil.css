@@ -76,3 +76,11 @@ main aside a {
 .reklaam {
     width: 100%;
 }
+
+footer {
+    width: 100%;
+    min-height: 50px;
+    background-color: lightsteelblue;
+    border-style: solid;
+    border-width: 1px;
+}
