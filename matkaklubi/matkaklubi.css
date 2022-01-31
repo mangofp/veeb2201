@@ -20,3 +20,75 @@
     width: 66px;
     height: 64px;
 }
+
+.pais-menyy {
+    font-family: 'Montserrat', sans-serif;
+	font-size: 16.67px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2.67px;
+    margin-left: auto
+}
+
+.pais-menyy ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.pais-menyy li {
+    padding: 0px;
+    margin-left: 10px;
+    min-width: 100px;
+}
+
+.pais-menyy a {
+    color: #0B0B0B;
+}
+
+.paisSektsioon-pealkirjad {
+    padding-top: 20px;
+}
+
+.paisSektsioon-pealkirjad h1,
+.paisSektsioon-pealkirjad h2,
+.paisSektsioon-pealkirjad h3 {
+    font-weight: 800;
+    letter-spacing: 0px;
+    color: #0B0B0B;
+    text-transform: uppercase;
+}
+
+.paisSektsioon-pealkirjad h1 {
+    font-size: 74.39px;
+    line-height: 91px;
+}
+.paisSektsioon-pealkirjad h2 {
+    font-size: 39.57px;
+    line-height: 48px;
+}
+.paisSektsioon-pealkirjad h3 {
+    font-size: 20.83px;
+}
+
+.rida {
+    display: flex;
+    width: 100%;
+}
+
+.liblikas1 {
+    margin-top: -30px;
+    width: 75px;
+    height: 66px;
+    margin-left: auto;
+}
+
+
+@media screen and (min-width: 992px) {
+    .paisSektsioon-pealkirjad {
+        padding-top: 231px;
+    }
+    
+}
