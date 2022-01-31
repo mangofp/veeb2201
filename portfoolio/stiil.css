@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+/*
+Üldised elemendid
+*/
+
 body {
     background-color: maroon;
 }
