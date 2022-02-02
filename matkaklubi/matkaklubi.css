@@ -85,6 +85,12 @@
     margin-left: auto;
 }
 
+.liblikas2 {
+    width: 60px;
+    height: 32px;
+    margin-left: -60px;
+}
+
 
 @media screen and (min-width: 992px) {
     .paisSektsioon-pealkirjad {
