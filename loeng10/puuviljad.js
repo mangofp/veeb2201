@@ -25,11 +25,20 @@ let banaan = {
     kirjeldus: "dasdfasdfasdf"
 }
 
-let saadused = [ apelsin, porgand, banaan ]
+let mandariin = {
+    liik: "puuvili",
+    nimi: "mandariin",
+    varv: "orange",
+    hinnang: 8,
+    pilt: "./assets/apelsin.jpg",
+    kirjeldus: "dasdfasdfasdf"
+}
+
+let saadused = [ apelsin, porgand, banaan, mandariin ]
 
 function looPuuviljaHTML(puuvili) {
     return `
-    <div class="col card">
+    <div class="col-6 card">
         <img class="card-img-top" src="${puuvili.pilt}"
         <div class="card-body">
             <div class="card-title">${puuvili.nimi}</div>
@@ -42,11 +51,34 @@ function looPuuviljaHTML(puuvili) {
                 </div>
             </div>
         </div>
-    </div>
     `
 }
 
-let valjundElement = document.getElementById("valjund")
-for (let i = 0; i < saadused.length; i++) {
-    valjundElement.innerHTML += looPuuviljaHTML(saadused[i])
+function lisaPuuvili() {
+    let nimetusTekst = document.getElementById("nimetus").value
+    let liikTekst = document.getElementById("liik").value
+    let hinnang = document.getElementById("hinnang").value
+    let puuvili = {
+        liik: liikTekst,
+        nimi: nimetusTekst,
+        varv: "orange",
+        hinnang: hinnang,
+        pilt: "./assets/apelsin.jpg",
+        kirjeldus: "kasutaja sisestatud puuvili"
+    }
+    saadused.push(puuvili)
+    naitaPuuvilju()
 }
+
+function naitaPuuvilju() {
+    let valjundElement = document.getElementById("valjund")
+    let valjundHTML = ''
+    valjundHTML += '<div class="row">'
+    for (let i = 0; i < saadused.length; i++) {
+        valjundHTML += looPuuviljaHTML(saadused[i])
+    }
+    valjundHTML += '</div>'
+    valjundElement.innerHTML = valjundHTML
+}
+
+naitaPuuvilju()
