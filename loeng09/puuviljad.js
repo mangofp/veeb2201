@@ -1,19 +1,25 @@
 let apelsin = {
     liik: "puuvili",
     nimi: "apelsin",
-    varv: "orange"
+    varv: "orange",
+    hinnang: 8,
+    pilt: "./assets/apelsin.jpg"
 }
 
 let porgand = {
     liik: "juurvili",
     nimi: "porgand",
-    varv: "orange"
+    varv: "orange",
+    hinnang: 10,
+    pilt: "./assets/porgand.jpg"
 }
 
 let banaan = {
     liik: "rohttaim",
     nimi: "banaan",
-    varv: "yellow"
+    varv: "yellow",
+    hinnang: 7,
+    pilt: "./assets/banaan.jpg"
 }
 
 let saadused = [ apelsin, porgand, banaan ]
